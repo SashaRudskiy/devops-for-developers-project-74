@@ -6,7 +6,7 @@ services:
     volumes:
       - ./app:/app
     env_file:
-      - .env
+      - .env.example
     command: make dev
 
   caddy:

@@ -6,7 +6,7 @@ services:
     image: rudskiyae/rudskiyae
     command: make test
     env_file:
-      - .env
+      - .env.example
     depends_on:
       db:
         condition: service_healthy
